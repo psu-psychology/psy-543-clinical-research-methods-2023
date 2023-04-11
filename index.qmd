@@ -1,0 +1,241 @@
+---
+title: "Open science"
+author: "Rick Gilmore"
+format: revealjs
+editor: visual
+bibliography: 'bib/psy-543.bib'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, 
+                      message = FALSE,
+                      fig.align = "center",
+                      out.width = "800px")
+```
+
+## Acknowledgements
+
+Thank you to NICHD, NIMH, NIDA, NIH OD, NSF, the Alfred P. Sloan Foundation, the James S. McDonnell Foundation, the LEGO Foundation, and the John S. Templeton Foundation
+
+## Agenda
+
+-   Prelude
+-   Some questions to ponder
+-   Discuss [\@munafo_manifesto_2017](http://www.nature.com/articles/s41562-016-0021)
+-   Discuss [\@Silberzahn2018-st](https://doi.org/10.1177/2515245917747646)
+-   Discuss [\@Kathawalla2021-tk](https://doi.org/10.1525/collabra.18684)
+
+# Prelude
+
+------------------------------------------------------------------------
+
+```{r, fig.cap="[@NYU_Health_Sciences_Library2013-gp](https://www.youtube.com/watch?v=66oNv_DJuPc)"}
+knitr::include_url("https://www.youtube.com/embed/66oNv_DJuPc")
+```
+
+------------------------------------------------------------------------
+
+```{r, fig.cap="Survey responses from PSU researchers: <https://penn-state-open-science.github.io/survey-fall-2022/>"}
+knitr::include_graphics("https://penn-state-open-science.github.io/survey-fall-2022/include/img/fig-data-storage-places-1.png")
+```
+
+# Questions to ponder
+
+## What proportion of findings in the published scientific literature (in the fields you care about) are *actually true*?
+
+------------------------------------------------------------------------
+
+-   100%
+-   90%
+-   70%
+-   50%
+-   30%
+
+## How do we define what "*actually true*" means?
+
+## Is there a reproducibility crisis in science?
+
+------------------------------------------------------------------------
+
+> -   Yes, a significant crisis
+> -   Yes, a slight crisis
+> -   No crisis
+> -   Don't know
+
+------------------------------------------------------------------------
+
+```{r, fig.cap="[@baker_1500_2016](http://doi.org/10.1038/533452a)"}
+knitr::include_graphics("http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg")
+```
+
+------------------------------------------------------------------------
+
+```{r, fig.cap="Survey responses from PSU researchers: <https://penn-state-open-science.github.io/survey-fall-2022/>"}
+knitr::include_graphics("https://penn-state-open-science.github.io/survey-fall-2022/include/img/fig-repro-crisis-your-area-1.png")
+```
+
+## Have you failed to reproduce an analysis from your lab or someone else's?
+
+------------------------------------------------------------------------
+
+```{r, fig.cap="[@baker_1500_2016](http://doi.org/10.1038/533452a)"}
+knitr::include_graphics("http://www.nature.com/polopoly_fs/7.36718.1464174471!/image/reproducibility-graphic-online3.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online3.jpg")
+```
+
+## Does this surprise you? Why or why not?
+
+## What factors contribute to irreproducible research?
+
+------------------------------------------------------------------------
+
+```{r, fig.cap="[@baker_1500_2016](http://doi.org/10.1038/533452a)"}
+knitr::include_graphics("http://www.nature.com/polopoly_fs/7.36719.1464174488!/image/reproducibility-graphic-online4.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online4.jpg")
+```
+
+------------------------------------------------------------------------
+
+```{r}
+knitr::include_graphics("https://www.rd.com/wp-content/uploads/2017/02/01-How-Bad-is-it-to-Share-a-Toothbrush-159311405-ABykov-760x506.jpg")
+```
+
+------------------------------------------------------------------------
+
+> "*...psychologists tend to treat other peoples' theories like toothbrushes; no self-respecting individual wants to use anyone else's.*"
+
+[\@Mischel2011-br](https://www.psychologicalscience.org/observer/becoming-a-cumulative-science)
+
+------------------------------------------------------------------------
+
+> "*The toothbrush culture undermines the building of a genuinely cumulative science, encouraging more parallel play and solo game playing, rather than building on each other's directly relevant best work.*"
+
+[\@Mischel2011-br](https://www.psychologicalscience.org/observer/becoming-a-cumulative-science)
+
+## Do you agree or disagree with Mischel?
+
+# [\@munafo_manifesto_2017](http://www.nature.com/articles/s41562-016-0021)
+
+## When (and why) would someone write a manifesto?
+
+------------------------------------------------------------------------
+
+```{r, fig.cap="Figure 1 from [@munafo_manifesto_2017](http://www.nature.com/articles/s41562-016-0021). An idealized version of the hypothetico-deductive model of the scientific method is shown. Various potential threats to this model exist (indicated in red), including lack of replication5, hypothesizing after the results are known (HARKing), poor study design, low statistical power, analytical flexibility, P-hacking, publication bias and lack of data sharing. Together these will serve to undermine the robustness of published research, and may also impact on the ability of science to self-correct."}
+knitr::include_graphics("https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41562-016-0021/MediaObjects/41562_2016_Article_BFs415620160021_Fig1_HTML.jpg?as=webp")
+```
+
+## Your reaction?
+
+# Feynmann on 'Cargo Cult Science' [\@Feynman1974-ld](https://calteches.library.caltech.edu/51/2/CargoCult.htm)
+
+------------------------------------------------------------------------
+
+```{r, fig.cap="Richard P. Feynman, Wikipedia", out.width="50%"}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/en/4/42/Richard_Feynman_Nobel.jpg")
+```
+
+------------------------------------------------------------------------
+
+> "*The first principle is that you must not fool yourself---and you are the easiest person to fool. So you have to be very careful about that. After you've not fooled yourself, it's easy not to fool other scientists. You just have to be honest in a conventional way after that*".
+
+[\@Feynman1974-ld](https://calteches.library.caltech.edu/51/2/CargoCult.htm)
+
+------------------------------------------------------------------------
+
+> "*I'm talking about a specific, extra type of integrity that is not lying, but **bending over backwards to show how you're maybe wrong**, that you ought to do when acting as a scientist. And this is our responsibility as scientists, certainly to other scientists, and I think to laymen*."
+
+[\@Feynman1974-ld](https://calteches.library.caltech.edu/51/2/CargoCult.htm)
+
+------------------------------------------------------------------------
+
+> "*...If you've made up your mind to test a theory, or you want to explain some idea, you should always decide to publish it whichever way it comes out. If we only publish results of a certain kind, we can make the argument look good. We must publish both kinds of result.*"
+
+[\@Feynman1974-ld](https://calteches.library.caltech.edu/51/2/CargoCult.htm)
+
+# [\@Silberzahn2018-st](https://doi.org/10.1177/2515245917747646)
+
+------------------------------------------------------------------------
+
+> "*Twenty-nine teams involving 61 analysts used the same data set to address the same research question: whether soccer referees are more likely to give red cards to dark-skin-toned players than to light-skin-toned players.*"
+
+[\@Silberzahn2018-st](https://doi.org/10.1177/2515245917747646)
+
+## How much did results vary between different teams using the same data to test the same hypothesis?
+
+```{r, fig.cap="[@Silberzahn2018-st](https://doi.org/10.1177/2515245917747646)"}
+knitr::include_graphics("img/silberzahn-table-1.jpeg")
+```
+
+## What were the consequences of this variability in analytic approaches?
+
+```{r, fig.cap="[@Silberzahn2018-st](https://doi.org/10.1177/2515245917747646)"}
+knitr::include_graphics("img/silberzahn-fig-2.gif")
+```
+
+## Did the analysts' beliefs regarding the hypothesis change over time?
+
+```{r, fig.cap="[@Silberzahn2018-st](https://doi.org/10.1177/2515245917747646)"}
+knitr::include_graphics("img/silberzahn-fig-4.gif")
+```
+
+------------------------------------------------------------------------
+
+> "*Here, we have demonstrated that as a result of researchers' choices and assumptions during analysis, variation in estimated effect sizes can emerge even when analyses use the same data.* "
+
+[@Silberzahn2018-st](https://doi.org/10.1177/2515245917747646)
+
+------------------------------------------------------------------------
+
+> "*These findings suggest that significant variation in the results of analyses of complex data may be difficult to avoid, even by experts with honest intentions.*"
+
+[@Silberzahn2018-st](https://doi.org/10.1177/2515245917747646)
+
+------------------------------------------------------------------------
+
+> "*The best defense against subjectivity in science is to expose it.*"
+
+[@Silberzahn2018-st](https://doi.org/10.1177/2515245917747646)
+
+------------------------------------------------------------------------
+
+> "*Transparency in data, methods, and process gives the rest of the community opportunity to see the decisions, question them, offer alternatives, and test these alternatives in further research.*"
+
+[@Silberzahn2018-st](https://doi.org/10.1177/2515245917747646)
+
+------------------------------------------------------------------------
+
+```{r, fig.cap="[@Botvinik-Nezer2020-wr](https://doi.org/10.1038/s41586-020-2314-9)"}
+knitr::include_graphics("img/botvinick-nezer-nature-2020.png")
+```
+
+## How could a 'many analysts' approach be helpful/harmful?
+
+# [\@Kathawalla2021-tk](https://doi.org/10.1525/collabra.18684)
+
+------------------------------------------------------------------------
+
+```{r, fig.cap="Figure 1 from [@Kathawalla2021-tk](https://doi.org/10.1525/collabra.18684)"}
+knitr::include_graphics("https://ucp.silverchair-cdn.com/ucp/content_public/journal/collabra/7/1/10.1525_collabra.18684/2/collabra_2021_7_1_18684_49218.jpeg?Expires=1684259019&Signature=3FLrykRLgaA45IJUMIXgL4P~djOqP81IjPEOSFvMaPaP0bZHt~FDvrFjUtxt-mnHmkNYwFXetjH5O3HnZW7E22VY8ZJg~tqTpI0-dvuOldS~q3h0eA6nbvbs9CHDorOfpAXmGwg-28CJOvQvUIeilyNEXsJwf4eyYY0BP6raNxcKh0naVxgBn3oS7czc3iWbvoD4u939YsHtgAccRy8qEXz~n3YKq0cEFP-GNl9jEvewdpqDesd0uA1~SS3jKosLAOFX-aAPsMw46XBa4Fj6KDknz3m-vTvC3BlGhOAwGfG~Mbhfkp8WPmPnCG7TiXbsQDAIiQHsyTSHC3ZeRxPP~A__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA")
+```
+
+## Your thoughts?
+
+# Coming soon...
+
+```{r}
+knitr::include_url("https://penn-state-open-science.github.io/bootcamp-2023/index.html", height="600px")
+```
+
+# Resources
+
+## Code
+
+This talk was produced on `r Sys.Date()` in [RStudio](http://rstudio.com) using [Quarto](https://quarto.org) and the revealJS framework.
+
+------------------------------------------------------------------------
+
+The code and materials used to generate the slides may be found at <https://psu-psychology.github.io/psy-543-clinical-research-methods-2023/>. Information about the R Session that produced the code is as follows:
+
+```{r session-info}
+sessionInfo()
+```
+
+## References
